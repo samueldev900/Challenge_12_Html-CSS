@@ -28,6 +28,7 @@ body{
     background-color: var(--cor3);
 }
 main{
+    position: relative;
     height: 600px;
     width: 335px;
     border-radius: 15px;
@@ -56,8 +57,29 @@ main{
     grid-template-columns: 50px auto auto;
     height: 80px;
     width: 300px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    transform: scale(1);
+    transition: .3s;
+    
+}
+.interaction2{
+    position:absolute;
+    top: 80%;
+    display: grid;
+    flex-direction: row;
+    place-items: center;
+    grid-template-columns: auto auto auto auto 80px ;
+    height: 80px;
+    width: 300px;
     padding: 20px;
-
+    transition: .3s;
+    color: white;
+    transform: scale(0);
+    background-color: var(--cor0);
+}
+.interaction2 P{
+    letter-spacing: 5px;
 }
 .interaction img{
     width: 50px;
@@ -74,15 +96,27 @@ main{
     background-color: var(--cor3);
     transition: background-color 0.3s ease;
 }
+.icon-share2{
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--cor1);
+    transition: background-color 0.3s ease;
+}
 .icon-share:hover{
     background-color: var(--cor2);
 }
+.icon-share2:hover{
+    background-color: var(--cor0);
+}
 .data{
-  
     height: 45px;
     width:150px ;
 }
 .data p{
     margin-top: 5px;
 }
-

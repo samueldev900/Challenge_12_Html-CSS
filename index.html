@@ -11,10 +11,14 @@
   
   <title>Frontend Mentor | Article preview component</title>
 
-
 </head>
 <body>
-  <main>
+  <div id="btn-compartilhar">
+      <img src="images/icon-pinterest.svg" alt="icon-pinterest">
+      <img src="images/icon-twitter.svg" alt="icon-twitter">
+      <img src="images/icon-facebook.svg" alt="icon-facebook">
+  </div>
+  <main id="principal">
     <div class="image">
       
     </div>
@@ -30,15 +34,23 @@
           to help you make any room feel complete.
         </p>
       </div>
-      <div class="interaction">
+      <div class="interaction" id="idinteraction">
           <img src="images/avatar-michelle.jpg" alt="michelle-icon">
         <div class="data">
           <p><strong>Michelle Appleton</strong></p>
           <p>28 Jun 2020</p>
         </div>
-  
-    
-      <span class="icon-share" id="icon-share" ><i class="fa-solid fa-share"></i></span>
+      <span class="icon-share" id="icon-share" onclick="bntInterativo()" ><i class="fa-solid fa-share"></i></span>
+    </div>
+
+    <div class="interaction2" id="idinteraction2">
+
+      <p>SHARE</p>
+      <img src="images/icon-pinterest.svg" alt="icon-pinterest">
+      <img src="images/icon-twitter.svg" alt="icon-twitter">
+      <img src="images/icon-facebook.svg" alt="icon-facebook">
+       <span class="icon-share2" onclick="bntInterativo()"><i class="fa-solid fa-share" style="color: #ffffff;"></i></span>
+      
     </div>
     </article>
 
@@ -51,5 +63,6 @@
   <script src="main.js">
 
   </script>
+
 </body>
 </html>
